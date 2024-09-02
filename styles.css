@@ -1,0 +1,212 @@
+body {
+    
+  font-family: 'Roboto', sans-serif;    
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #1C1C1C, #2C3E50);
+    color: #FFFFFF;
+}
+
+header {
+    background: #1ABC9C;
+    color: #FFFFFF;
+    padding: 2rem;
+    text-align: center;
+    border-radius: 0 0 20px 20px;
+}
+section {
+    padding: 2rem;
+    margin: 1rem 0;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+h2 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    border-bottom: 2px solid #1ABC9C;
+    padding-bottom: 0.5rem;
+}
+.round-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #7affe2;
+    color: rgb(14, 14, 14);
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.round-btn:hover {
+    background-color: #26ffc9;
+}
+
+main {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+#more_info{
+   
+    border-top: 1px solid #ffffff34;
+    padding-top: 1.5rem;
+}
+
+#more_info a{
+    color: #24bbe0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.6rem;
+    font-size: 0.875rem;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+#more_info a:hover{
+    color: #cbd5e1;
+}
+
+
+
+.content-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.image-container {
+    background-color: #FFFFFF;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    max-width: 200px; /* Ajuste conforme necessário */
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label, input, button {
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    font-size: 1.1rem; /* Aumentando o tamanho do texto */
+}
+
+input {
+    background-color: #EEEEEE;
+    color: #1C1C1C;
+    border: 1px solid #CCCCCC;
+}
+
+.button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    color: #FFFFFF;
+    background: linear-gradient(to right, #72ffd5, #E55A4E);
+    border-radius: 25px;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.button:hover {
+    background: linear-gradient(to right, #78ffcb, #2fe7cf);
+    transform: scale(1.05);
+}
+
+.button:active {
+    transform: scale(0.95);
+}
+
+#resultado {
+    margin-top: 1rem;
+    font-size: 1.3rem; /* Aumentando o tamanho do texto */
+    color: #1C1C1C;
+}
+
+/* Animações */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+    animation: fadeIn 1s ease-out forwards;
+    opacity: 0;
+}
+
+.delay-1 { animation-delay: 0.5s; }
+.delay-2 { animation-delay: 1s; }
+
+/* Efeito de hover */
+.button:hover {
+    background-color: #0ad4a8;
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+}
+.imc-container {
+    background-color: #FFFFFF;
+    color: #1C1C1C;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #11e493;
+    max-width: 300px;
+    margin: 0 auto;
+    flex: 1;
+}
+
+/* Ajustando o tamanho da imagem */
+.image-container {
+    background-color: #FFFFFF;
+    color: #1C1C1C;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #19b486;
+    max-width: 200px; /* Ajuste o tamanho conforme necessário */
+    flex: 1;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+a, button {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.fade-in {
+    animation: fadeIn 1s ease-out forwards;
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+@media (max-width: 768px) {
+    .content-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .image-container {
+        max-width: 150px;
+    }
+}
